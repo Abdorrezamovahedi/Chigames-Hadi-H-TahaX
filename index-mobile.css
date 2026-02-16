@@ -1,0 +1,163 @@
+/* معرفی فونت فارسی */
+@font-face {
+    font-family: 'MjOjan';
+    src: url('fonts/Mj_Ojan_0.ttf') format('truetype');
+}
+
+/* بدنه صفحه */
+body {
+    margin: 0;
+    font-family: 'MjOjan', sans-serif;
+    background: linear-gradient(135deg, #ff8800, #ffcc33);
+}
+
+/* مخفی کردن محتوا روی دسکتاپ */
+#mobile-content {
+    display: none;
+}
+
+/* فقط نمایش روی موبایل */
+@media screen and (max-width: 768px) {
+    #mobile-content {
+        display: block;
+        padding: 20px 10px;
+    }
+
+    /* خوش آمدگویی */
+    #div1 {
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    #div1 span {
+        display: block;
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 10px;
+        text-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+
+    /* دکمه‌ها */
+    .btn {
+        display: block;
+        width: 90%;
+        max-width: 350px;
+        margin: 10px auto;
+        padding: 12px 0;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #333;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #111;
+        color: #ff8800;
+        box-shadow: 0 0 20px #ff8800;
+    }
+
+    /* عکس وسط صفحه */
+    .img-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .img-container img {
+        width: 90%;
+        max-width: 350px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    /* متن زیبا و نئون روی h1 */
+    h1 {
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 0 0 5px #ffcc33, 0 0 10px #ff8800, 0 0 15px #ffcc33;
+        line-height: 1.5;
+    }
+}
+#p{
+    text-align: center;
+    color: #1111113a;
+}
+
+
+/* دکمه اصلی */
+.btn {
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* پس زمینه تار */
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+/* منو */
+#menu {
+    position: fixed;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/* لینک‌های داخل منو */
+#menu a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #ff8800;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* دکمه بستن */
+.close-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+/* وقتی فعال میشه */
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu.active {
+    bottom: 0;
+}

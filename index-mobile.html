@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Chigames Hadi H TahaX</title>
+
+    <!-- فایل CSS جداگانه -->
+    <link rel="stylesheet" href="index-mobile.css">
+</head>
+
+<body>
+
+<div id="mobile-content">
+
+    <div id="div1">
+        <h1>
+            <span>Chigames Hadi H TahaX خوش آمدید به</span>
+            اینجا پر از ویدیوهای خفن و جذاب است 😎🔥
+            <br>
+            کانال ما رو از دست نده
+        </h1>
+    </div>
+
+    <!-- دکمه باز شدن منو -->
+    <button class="btn" id="openBtn">برای دیدن ویدیو ها کلیک کنید</button>
+
+    <div class="img-container">
+        <img src="hmgs/img1.jpg" alt="تصویر تبلیغی">
+    </div>
+
+</div>
+
+<div>
+    <p id="p">
+        برای ثبت سفارش سایت به این آیدی در روبیکا مراجعه کنید
+        <br>
+        @Abdorreza_AM12
+    </p>
+</div>
+
+<!-- پس‌زمینه تار -->
+<div id="overlay"></div>
+
+<!-- منو -->
+<div id="menu">
+    <a href="https://rubika.ir/joinc/ECACIGCE0IPDDUEEAKSBTPKJRDAOHKWV" target="_blank">کانال روبیکا</a>
+    <a href="https://aparat.com/HadiYasin_Official" target="_blank">کانال آپارات</a>
+    <button id="closeBtn">بستن ✖</button>
+</div>
+
+<!-- اسکریپت منو -->
+<script>
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+openBtn.addEventListener("click", () => {
+    menu.classList.add("active");
+    overlay.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+overlay.addEventListener("click", () => {
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+</script>
+
+</body>
+</html>
